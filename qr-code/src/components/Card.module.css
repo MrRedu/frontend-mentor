@@ -1,0 +1,34 @@
+.container {
+    background-color: var(--white);
+    padding: 1rem 1rem 40px;
+    max-width: 320px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.05);
+}
+
+.img {
+    border-radius: 10px;
+}
+
+.header .title {
+    font-size: 22px;
+    font-weight: var(--f-w-bold);
+    color: var(--slate-900);
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+.body p {
+    color: var(--slate-500)
+}

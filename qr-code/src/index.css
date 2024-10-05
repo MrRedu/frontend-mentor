@@ -1,0 +1,22 @@
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+    --white: #fff;
+    --slate-300: hsl(212, 45%, 89%);
+    --slate-500: hsl(216, 15%, 48%);
+    --slate-900: hsl(218, 44%, 22%);
+
+
+    --f-s-body: 15px;
+    --f-w-regular: 400;
+    --f-w-bold: 700;
+}
+
+body {
+    background-color: var(--slate-300);
+    font-size: var(--f-s-body);
+    font-weight: var(--f-w-regular);
+    font-family: "Outfit", sans-serif;
+    width: 100%;
+}
