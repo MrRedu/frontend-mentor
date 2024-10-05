@@ -1,16 +1,16 @@
 import styles from './Card.module.css';
 
-export const Card = () => {
+export const Card = ({ srcImage, altImage, title, paragraph }) => {
     return (
         <article className={styles.container}>
             <div>
-                <img className={styles.img} src="/src/assets/image-qr-code.png" alt="QR" />
+                <img className={styles.img} src={srcImage} alt={altImage} />
             </div>
             <section className={styles.body}>
                 <header className={styles.header}>
-                    <h2 className={styles.title}>{`Improve your front-end skills by building projects`}</h2>
+                    <h2 className={styles.title}>{title}</h2>
                 </header>
-                <p>{`Scan the QR code to visit Frontend Mentor and take your coding skills to the next level`}</p>
+                <p>{paragraph}</p>
             </section>
         </article>
     )
