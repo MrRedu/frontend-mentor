@@ -39,7 +39,7 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: var(--color-grey-800);
-    padding: 2rem;
+    padding: 2.25rem;
     border-radius: 0.5rem;
 
     max-width: 372px;
@@ -57,8 +57,8 @@ body {
 
 .card header .avatar {
     border-radius: 50%;
-    width: 80px;
-    height: 80px;
+    width: 72px;
+    height: 72px;
     margin-bottom: 1.25rem;
 }
 
@@ -97,9 +97,10 @@ body {
     font-weight: var(--f-w-bold);
     border: none;
     border-radius: .5rem;
-    padding: 1rem;
+    padding: 0.90rem;
     width: 100%;
     cursor: pointer;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.10);
 
     transition: all .15s ease-in-out, background-color .15s ease-in-out;
 }
