@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    /* Colors */
+    --color-green: hsl(75, 94%, 57%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-grey-400: hsl(0, 0%, 70%);
+    --color-grey-700: hsl(0, 0%, 20%);
+    --color-grey-800: hsl(0, 0%, 12%);
+    --color-grey-900: hsl(0, 0%, 8%);
+
+    /* Font */
+    --f-s-body: 14px;
+    --f-w-regular: 400;
+    --f-w-medium: 600;
+    --f-w-bold: 700;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: var(--f-w-regular);
+    font-size: var(--f-s-body);
+    line-height: 1.5;
+    color: var(--color-white);
+    background-color: var(--color-grey-900);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    min-height: 100vh;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-grey-800);
+    padding: 2rem;
+    border-radius: 0.5rem;
+
+    max-width: 372px;
+    width: 100%;
+
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+.card header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card header .avatar {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1.25rem;
+}
+
+.card header .title {
+    font-size: 1.5rem;
+    line-height: 1.25;
+    font-weight: var(--f-w-medium);
+    margin-bottom: .50rem;
+}
+
+.card header .subtitle {
+    color: var(--color-green);
+    font-weight: var(--f-w-medium);
+    font-size: var(--f-s-body);
+    margin-bottom: 1.5rem
+}
+
+.card .description {
+    text-align: center;
+    text-wrap: pretty;
+    font-size: var(--f-s-body);
+    color: var(--color-grey-400);
+    margin-bottom: 1.5rem
+}
+
+.card .links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.card .button {
+    background-color: var(--color-grey-700);
+    color: var(--color-white);
+    font-weight: var(--f-w-bold);
+    border: none;
+    border-radius: .5rem;
+    padding: 1rem;
+    width: 100%;
+    cursor: pointer;
+
+    transition: all .15s ease-in-out, background-color .15s ease-in-out;
+}
+
+.card .button:hover,
+.card .button.active {
+    background-color: var(--color-green);
+    color: var(--color-grey-900);
+}
